@@ -107,8 +107,8 @@ GameObject:
   m_Component:
   - component: {fileID: 258095694582968105}
   - component: {fileID: 5946012719680850706}
+  - component: {fileID: 5868661153879210173}
   - component: {fileID: 696138339}
-  - component: {fileID: 696138338}
   - component: {fileID: 258095694582968111}
   m_Layer: 0
   m_Name: Character
@@ -147,6 +147,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerMovement: {fileID: 696138339}
+  PlayerInventory: {fileID: 0}
+  ItemViewerCamera: {fileID: 258095693867826973}
+  ItemViewDistance: 2
+  ItemLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  ItemPickView: {fileID: 0}
+--- !u!114 &5868661153879210173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258095694582968108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec97a8b70f713a4c93620808491682b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Items: []
 --- !u!114 &696138339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,24 +188,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   jumpDistance: 3
---- !u!114 &696138338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 258095694582968108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43e5798782ee2bc46ae0a2afb430c3f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Camera: {fileID: 258095693867826973}
-  maxDistance: 2
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 1024
-  ItemPickView: {fileID: 0}
 --- !u!143 &258095694582968111
 CharacterController:
   m_ObjectHideFlags: 0

@@ -65,8 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Character\Player.cs" />
+    <Compile Include="Assets\Scripts\Character\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\Character\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\Item\Item.cs" />
+    <Compile Include="Assets\Scripts\Item\ItemManager.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/arma5/Documents/Losha/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

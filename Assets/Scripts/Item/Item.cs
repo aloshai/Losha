@@ -5,4 +5,5 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     public string Name, Id;
+    public GameObject Prefab;
 }

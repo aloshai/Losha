@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public PlayerMovement PlayerMovement;
+    public PlayerInventory PlayerInventory;
 
     [Header("Item Viewer")]
     public Camera ItemViewerCamera;
@@ -17,11 +18,23 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        Vector3 lookAtPosition = ItemViewerCamera.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, ItemViewerCamera.nearClipPlane));
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            PlayerInventory.DropItem(0);
+        }
 
-        if (Physics.Raycast(new Ray(lookAtPosition, ItemViewerCamera.transform.forward), out var hitInfo, ItemViewDistance, ItemLayerMask))
+        Vector3 lookAtPosition = ItemViewerCamera.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, ItemViewerCamera.nearClipPlane));
+        var flag = Physics.Raycast(new Ray(lookAtPosition, ItemViewerCamera.transform.forward), out var hitInfo,
+            ItemViewDistance, ItemLayerMask);
+
+        if (flag)
         {
             var item = hitInfo.transform.GetComponent<Item>();
+            if (item != null)
+            {
+                if(Input.GetKeyDown(KeyCode.F)) PlayerInventory.TakeItem(hitInfo.transform);
+            }
+
             ItemPickView.gameObject.SetActive(true);
             itemLastActive = true;
         }
@@ -31,5 +44,4 @@ public class Player : MonoBehaviour
             ItemPickView.gameObject.SetActive(false);
         }
     }
-
 }
