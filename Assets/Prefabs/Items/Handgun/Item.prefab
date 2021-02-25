@@ -151,8 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4897a304734fd9c4fa7803561a72cb70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Handgun
-  id: 1
+  Name: Handgun
+  Id: 20
 --- !u!54 &5072940696982093328
 Rigidbody:
   m_ObjectHideFlags: 0
