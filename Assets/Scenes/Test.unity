@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 13035254}
   - component: {fileID: 13035255}
   m_Layer: 9
-  m_Name: arka
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 222432908}
   - component: {fileID: 222432907}
   m_Layer: 9
-  m_Name: Cube (2)
+  m_Name: Parkour_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -418,7 +418,7 @@ GameObject:
   - component: {fileID: 595972263}
   - component: {fileID: 595972264}
   m_Layer: 9
-  m_Name: "sa\u011F"
+  m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 1061925149}
   - component: {fileID: 1061925148}
   m_Layer: 9
-  m_Name: Cube
+  m_Name: Parkour_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -831,7 +831,7 @@ GameObject:
   - component: {fileID: 1131988307}
   - component: {fileID: 1131988306}
   m_Layer: 9
-  m_Name: Cube (3)
+  m_Name: Parkour_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -920,7 +920,7 @@ GameObject:
   - component: {fileID: 1175388568}
   - component: {fileID: 1175388569}
   m_Layer: 9
-  m_Name: "\xF6n"
+  m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -964,7 +964,7 @@ GameObject:
   - component: {fileID: 1283234471}
   - component: {fileID: 1283234472}
   m_Layer: 9
-  m_Name: Sol
+  m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1213,7 +1213,7 @@ GameObject:
   - component: {fileID: 2094688157}
   - component: {fileID: 2094688156}
   m_Layer: 9
-  m_Name: Cube (1)
+  m_Name: Parkour_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
