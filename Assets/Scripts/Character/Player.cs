@@ -7,6 +7,10 @@ public class Player : MonoBehaviour
     public PlayerMovement PlayerMovement;
     public PlayerInventory PlayerInventory;
 
+    public Transform hand;
+
+    public Transform Bullet;
+
     [Header("Item Viewer")]
     public Camera ItemViewerCamera;
     public float ItemViewDistance = 2f;
@@ -18,12 +22,39 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
+
         if (Input.GetKeyDown(KeyCode.C))
         {
+            // TODO: index parametresi düzeltilecek.
             PlayerInventory.DropItem(0);
+            if(PlayerInventory.Items.Count <= 0) PlayerInventory.DeuseItem();
         }
 
+        if (Input.GetKeyDown(KeyCode.Alpha1) && PlayerInventory.GetWeapon() == null)
+        {
+            // TODO: index parametresi düzeltilecek.
+            PlayerInventory.UseItem(0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2) && PlayerInventory.GetWeapon() != null)
+        {
+            // TODO: index parametresi düzeltilecek.
+            PlayerInventory.DeuseItem();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            var barrel = PlayerInventory.GetWeapon();
+            if (barrel == null) return;
+            var barrelTransform = barrel.transform.Find("Barrel");
+            if (Physics.Raycast(new Ray(barrelTransform.position, barrelTransform.forward), out var hitInfo2, 50f))
+            {
+                Instantiate(Bullet, hitInfo2.point, Quaternion.identity);
+            }
+        }
         Vector3 lookAtPosition = ItemViewerCamera.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, ItemViewerCamera.nearClipPlane));
+
         var flag = Physics.Raycast(new Ray(lookAtPosition, ItemViewerCamera.transform.forward), out var hitInfo,
             ItemViewDistance, ItemLayerMask);
 

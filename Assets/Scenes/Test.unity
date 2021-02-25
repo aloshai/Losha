@@ -451,18 +451,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 25, y: 20, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &696138338 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5868661153879210173, guid: 96e7d0a75f5264448947f533fd17cd39,
-    type: 3}
-  m_PrefabInstance: {fileID: 8132290928753872126}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ec97a8b70f713a4c93620808491682b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &699552952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,6 +1035,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd72325e4e1c2114193a4141e621af71, type: 3}
+--- !u!4 &1622106384 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4763451073782360358, guid: 96e7d0a75f5264448947f533fd17cd39,
+    type: 3}
+  m_PrefabInstance: {fileID: 8132290928753872126}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1638751061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1360,8 +1354,8 @@ PrefabInstance:
       objectReference: {fileID: 754765135}
     - target: {fileID: 5946012719680850706, guid: 96e7d0a75f5264448947f533fd17cd39,
         type: 3}
-      propertyPath: PlayerInventory
+      propertyPath: hand
       value: 
-      objectReference: {fileID: 696138338}
+      objectReference: {fileID: 1622106384}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96e7d0a75f5264448947f533fd17cd39, type: 3}
