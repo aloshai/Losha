@@ -1348,6 +1348,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 5868661153879210173, guid: 96e7d0a75f5264448947f533fd17cd39,
+        type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 870880344}
     - target: {fileID: 5946012719680850706, guid: 96e7d0a75f5264448947f533fd17cd39,
         type: 3}
       propertyPath: ItemPickView
